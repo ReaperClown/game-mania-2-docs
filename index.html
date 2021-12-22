@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/scrollbar.css" rel="stylesheet" />
+
+    <title>
+      Documentação - Game Mania - Angular
+    </title>
+  </head>
+
+  <body>
+    <!--Empacotador da página-->
+    <div class="page-wrapper">
+      <!--Barra lateral-->
+      <aside id="sidebar">
+        <!--Botão toggle-->
+        <div class="button-container clearfix">
+          <div class="menu-toggle flaticon-menu10"></div>
+        </div>
+
+        <!--Menu Box-->
+        <div class="menu-box">
+          <!--Logo-->
+          <br />
+          <div class="logo text-right">
+            <a title="logo" href="#"><img src="images/logo.png" alt="" /></a>
+          </div>
+
+          <!--Menu Grudento-->
+          <nav class="sticky-menu">
+            <ul>
+              <li class="current">
+                <a href="#introduction"
+                  >Introdução <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#html-structure"
+                  >Recursos <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#css-structure"
+                  >Passos iniciais <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#javascript"
+                  >Estrutura de pastas <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#color"
+                  >Cores<span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#font">Fontes<span class="fa fa-arrow-right"></span></a>
+              </li>
+              <li>
+                <a href="#Dependencies"
+                  >Dependências <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+              <li>
+                <a href="#support"
+                  >Suporte <span class="fa fa-arrow-right"></span
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="copyright">
+          Copyright &copy; <a href="https://github.com/ReaperClown">ReaperClown</a> 2021
+        </div>
+      </aside>
+
+      <div id="content-section">
+        <!--Introdução-->
+        <section class="section introduction" id="introduction">
+          <div class="sec-title">
+            <span class="icon fa fa-windows"></span>
+            <h2>Introdução</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <h2>Game Mania</h2>
+            <h3>Game Mania - Angular Material</h3>
+
+            <div class="separator"></div>
+
+            <strong>Criado :</strong> 21/12/2021<br />
+            <strong>Por :</strong> ReaperClown<br />
+            <strong>GitHub :</strong>
+            <a href="https://github.com/ReaperClown"
+              >@ReaperClown</a
+            >
+            <br />
+
+            <br />
+            <p>
+              O intuito do site Game Mania é para fins acadêmicos a fim de colocar
+              em prática os conteúdos sobre o framework Angular Material.<br>
+              O site é puramente fictício e nenhum produto, preço, ou informação (financeira, legal, empresarial, etc)
+              são verdadeiros, logo não devem ser considerados.
+            </p>
+          </div>
+        </section>
+
+        <!--Estrutura HTML-->
+        <section class="section html-structure" id="html-structure">
+          <div class="sec-title">
+            <span class="icon fa fa-th-large"></span>
+            <h2>Recursos</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <h3>
+              O site conta com o framework
+              <strong>Bootstrap v3.3.4</strong> com suas tags HTML5 válidas. O site
+              segue o layout de quatro colunas do padrão grid.
+            </h3>
+
+            <ul>
+              <li>100% Responsivo</li>
+              <li>Sass</li>
+              <li>HTML5 e CSS3</li>
+              <li>Angular Material</li>
+              <li>Google Fonts</li>
+              <li>CSS3 Animation</li>
+              <li>Font Awesome Icons</li>
+              <li>Material Icons</li>
+              <li>Comparação de Produto</li>
+              <li>Detalhes de Produto</li>
+              <li>Adicionar ao Carrinho</li>
+              <li>Visão em Grade / Lista</li>
+              <li>Visão Rápida</li>
+              <li>Lista de Desejos</li>
+              <li>Comunidade</li>
+              <li>Ngx Pagination</li>
+              <li>Swiper Carousel</li>
+            </ul>
+          </div>
+        </section>
+
+        <!--CSS Structure-->
+        <section class="section css-structure" id="css-structure">
+          <div class="sec-title">
+            <span class="icon fa fa-at"></span>
+            <h2>Primeiros passos</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <div class="docs-typography">
+              <h3>Preparação</h3>
+              <ol>
+                <li>
+                  Tenha certeza de que o
+                  <a href="https://nodejs.org">Node.js</a>
+                  está instalado.
+                </li>
+                <li>
+                  Abra o terminal no editor de escolha e navegue até o
+                  diretório <code>src</code>.
+                </li>
+                <li>
+                  Execute o commando <code>npm install</code>. Este comando baixará
+                  todas as dependências exigidas pelo site, definidas no arquivo
+                  <code>package.json</code>.
+                </li>
+                <li>
+                  Então execute o comando <code>npm install -g @angular/cli</code>
+                  para instalar a <strong>Angular CLI</strong> (caso não esteja
+                  instalada).
+                </li>
+              </ol>
+              <h3>Executando o projeto</h3>
+              <p>
+                Para iniciar o servidor HTTP local nativo do angular, com live-reload, execute o commando:
+              </p>
+              <pre><code class="language-text">ng serve</code></pre>
+              <p>Para criar a build para o cenário de produção, execute:</p>
+              <pre><code class="language-text">ng build --prod</code></pre>
+              <p>
+                Após a execução e então a compilação, o projeto compilado
+                estará localizado na pasta <code>dist</code>, na raiz do projeto.
+              </p>
+              <p>
+                Para uma lista completa dos commandos da
+                <strong>Angular CLI</strong>, consulte a
+                <a href="https://cli.angular.io/" target="_blank" rel="noopener"
+                  >documentação oficial</a
+                >.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--Estrutura de Pastas-->
+        <section class="section folder_structure" id="javascript">
+          <div class="sec-title">
+            <span class="icon fa fa-code"></span>
+            <h2>Estrutura de pastas</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <p>
+              Ao descompactar o projeto a estrutura de pastas será a seguinte:
+            </p>
+            <ul>
+              <li>
+                src
+                <ul>
+                  <li>app</li>
+                  <li>assets</li>
+                  <li>environments</li>
+                  <li>pages</li>
+                  <li>routes</li>
+                  <li>favicon.ico</li>
+                  <li>index.html</li>
+                  <li>main.ts</li>
+                  <li>polyfills.ts</li>
+                  <li>styles.scss</li>
+                  <li>test.ts</li>
+                </ul>
+              </li>
+              <li>.browserslistrc</li>
+              <li>.editorconfig</li>
+              <li>.gitignore</li>
+              <li>README.md</li>
+              <li>angular.json</li>
+              <li>karma.conf.js</li>
+              <li>package-lock.json</li>
+              <li>package.json</li>
+              <li>tsconfig.app.json</li>
+              <li>tsconfig.json</li>
+              <li>tsconfig.spec.json</li>
+            </ul>
+          </div>
+        </section>
+
+        <!--Cores-->
+        <section class="section contact-form" id="color">
+          <div class="sec-title">
+            <span class="icon fa fa-th-list"></span>
+            <h2>Cores principais</h2>
+          </div>
+          <div class="sec-content">
+            <code class="html keyword">A definir</code>
+            <!-- <code class="html keyword"></code>
+            <code class="html keyword"></code> -->
+          </div>
+        </section>
+
+        <!--Fonte-->
+        <section class="section contact-form" id="font">
+          <div class="sec-title">
+            <span class="icon fa fa-th-list"></span>
+            <h2>Fonte predominante</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <code>
+              <pre>!--Google Fonts--<br>link href="<a href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap">https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap</a>"</pre>
+            </code>
+          </div>
+        </section>
+
+        <!--Sources and Credits-->
+        <section class="section sources-credits" id="Dependencies">
+          <div class="sec-title">
+            <span class="icon fa fa-credit-card"></span>
+            <h2>Dependências</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <ul>
+              <li>
+                <b>Flex-layout </b> : Doc:
+                https://www.npmjs.com/package/@angular/flex-layout
+              </li>
+              <li>
+                <b>Angular Material</b> : Doc:
+                https://material.angular.io/guide/getting-started
+              </li>
+              <li>
+                <b>Font Awesome</b> : Doc:
+                https://www.npmjs.com/package/font-awesome
+              </li>
+              <li>
+                <b>Ngx-pagination</b> : Doc:
+                https://www.npmjs.com/package/ngx-pagination
+              </li>
+              <li>
+                <b>Ngx-spinner</b> : Doc:
+                https://www.npmjs.com/package/ngx-spinner#demo
+              </li>
+              <li>
+                <b>Ngx-swiper-wrapper</b> : Doc:
+                https://www.npmjs.com/package/ngx-swiper-wrapper
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--Suporte-->
+        <section class="section support" id="support">
+          <div class="sec-title">
+            <span class="icon fa fa-support"></span>
+            <h2>Suporte</h2>
+          </div>
+
+          <br />
+          <div class="sec-content">
+            <p>
+              Email:
+              <a href="mailto:the.willian.mesquita@gmail.com"
+                >the.willian.mesquita@gmail.com</a
+              >
+            </p>
+
+            <p>
+              GitHub:
+              <a href="https://github.com/ReaperClown" target="_blank"
+                rel="noopener noreferrer">ReaperClown</a
+              >
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!--Fim do empacotador-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/scrollbar.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
